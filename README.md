@@ -57,6 +57,24 @@
     docker exec -it client cp /etc/resolv.conf /tmp/resolv.conf && \
     docker exec -it client sed -i '/search/s/$/ example.com\nnameserver 192.168.100.20/' /tmp/resolv.conf && \
     docker exec -it client cp -f /tmp/resolv.conf /etc/resolv.conf
-    
-#### => connect via VNC viewer localhost:5901, default password: vncpassword
-#### => connect via noVNC HTML5 client: http://localhost:6901/?password=vncpassword
+  
+  #### Check DNS resolving rac-scan SCAN ips
+  
+    $ docker exec -it client nslookup rac-scan
+    Server:		192.168.100.20
+    Address:	192.168.100.20#53
+
+    Name:	rac-scan.example.com
+    Address: 192.168.100.15
+    Name:	rac-scan.example.com
+    Address: 192.168.100.14
+    Name:	rac-scan.example.com
+    Address: 192.168.100.16
+
+#### => connect via VNC viewer <ip-address>:5901, default password: vncpassword
+#### => connect via noVNC HTML5 client: http://<ip-address>:6901/?password=vncpassword
+
+![crsctl](http://prntscr.com/hhfuzq)
+![crsctl](https://github.com/s4ragent/misc/blob/master/rac_on_xx/docker/docker02.png)
+![crsctl](https://github.com/s4ragent/misc/blob/master/rac_on_xx/docker/docker03.png)
+![crsctl](https://github.com/s4ragent/misc/blob/master/rac_on_xx/docker/docker04.png)
