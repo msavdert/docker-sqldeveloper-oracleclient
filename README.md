@@ -74,7 +74,7 @@
 #### => connect via VNC viewer <ip-address>:5901, default password: vncpassword
 #### => connect via noVNC HTML5 client: http://<ip-address>:6901/?password=vncpassword
 
-![crsctl](http://prntscr.com/hhfuzq)
-![crsctl](https://github.com/s4ragent/misc/blob/master/rac_on_xx/docker/docker02.png)
-![crsctl](https://github.com/s4ragent/misc/blob/master/rac_on_xx/docker/docker03.png)
-![crsctl](https://github.com/s4ragent/misc/blob/master/rac_on_xx/docker/docker04.png)
+![crsctl](https://image.prntscr.com/image/nbnN54kVT5ahaaLCxnB4YQ.png)
+![crsctl](https://image.prntscr.com/image/aCT0bC5XQ8uEKPK7mTLEuA.png)
+![crsctl](https://image.prntscr.com/image/I6Jg8gsBT_WqqOEJuAfK9A.png)
+
