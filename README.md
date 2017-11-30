@@ -24,6 +24,16 @@
 
 ### Build Dockerfile (make sure all the files you downloaded are in the same directory with Dockerfile)
 
+    $ ls -l
+    total 578596
+    -rw-rw-r-- 1 docker docker       935 Nov 30 19:57 Dockerfile
+    -rw-rw-r-- 1 docker docker 174163338 Oct  9 22:30 jdk-8u151-linux-x64.rpm
+    -rw-rw-r-- 1 docker docker  52826628 Mar  1  2017 oracle-instantclient12.2-basic-12.2.0.1.0-1.x86_64.rpm
+    -rw-rw-r-- 1 docker docker    606864 Mar  1  2017 oracle-instantclient12.2-devel-12.2.0.1.0-1.x86_64.rpm
+    -rw-rw-r-- 1 docker docker    708104 Mar  1  2017 oracle-instantclient12.2-sqlplus-12.2.0.1.0-1.x86_64.rpm
+    -rw-rw-r-- 1 docker docker        34 Nov 30 19:57 README.md
+    -rw-rw-r-- 1 docker docker 364154996 Oct 17 18:41 sqldeveloper-17.3.1.279.0537-1.noarch.rpm
+    
     docker build -t melihsavdert/oracleclient .
 
 ### Start a container named "client"
