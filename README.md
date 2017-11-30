@@ -1,5 +1,8 @@
 # docker-sqldeveloper-oracleclient
 
+###The following pre-installed VNC server image is used as the base image.
+https://hub.docker.com/r/consol/centos-xfce-vnc/
+
 ### Cloning Repository
 
     git clone https://github.com/msavdert/docker-sqldeveloper-oracleclient
