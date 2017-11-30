@@ -19,7 +19,8 @@
 #### SQL Developer
     http://www.oracle.com/technetwork/developer-tools/sql-developer/downloads/index.html
 #### JDK
-    http://www.oracle.com/technetwork/java/javase/downloads/jdk9-downloads-3848520.html
+    jdk-8u151-linux-x64.rpm
+    wget -c -O jdk-8u151-linux-x64.rpm --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u151-b12/e758a0de34e24606bca991d704f6dcbf/jdk-8u151-linux-x64.rpm
 
 ### Build Dockerfile (make sure all the files you downloaded are in the same directory with Dockerfile)
 
