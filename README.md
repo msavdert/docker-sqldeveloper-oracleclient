@@ -78,3 +78,19 @@
 ![crsctl](https://image.prntscr.com/image/aCT0bC5XQ8uEKPK7mTLEuA.png)
 ![crsctl](https://image.prntscr.com/image/I6Jg8gsBT_WqqOEJuAfK9A.png)
 
+   docker exec -it client mkdir -p /usr/lib/oracle/12.2/client64/network/admin
+   docker exec -it client vi /usr/lib/oracle/12.2/client64/network/admin/tnsnames.ora
+
+   RAC=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=rac-scan.example.com)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=RAC)(FAILOVER_MODE=(TYPE=select)(METHOD=basic))))
+   RAC1=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=rac1-vip.example.com)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SID=RAC1)))
+   RAC2=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=rac1-vip.example.com)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SID=RAC2)))
+
+![crsctl](https://image.prntscr.com/image/k9Sg4thiQXmj_Pp6vP_0ag.png)
+![crsctl](https://image.prntscr.com/image/O0XFiEOhRHuPPP4hUy40Ew.png)
+
+Or with basic method
+
+![crsctl](https://image.prntscr.com/image/Hw9Z2-0uTzKQBBM2h2Rk1Q.png)
+![crsctl](https://image.prntscr.com/image/-UANahLCQFmFjwPGIfq0Yw.png)
+
+
